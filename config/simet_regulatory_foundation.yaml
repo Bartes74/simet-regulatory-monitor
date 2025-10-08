@@ -1,0 +1,144 @@
+project: SIMET_Regulatory_Monitor
+version: '1.0'
+created: '2025-10-08'
+countries:
+- EU
+- PL
+- DE
+- CZ
+- SK
+- LT
+languages:
+- pl
+- en
+- de
+- cs
+- sk
+- lt
+product_priorities:
+- id: ties
+  name_pl: Opaski kablowe / akcesoria
+  standard: EN 62275
+  priority: 1
+- id: boxes
+  name_pl: Puszki/obudowy instalacyjne
+  standard: EN 60670
+  priority: 2
+- id: glands
+  name_pl: Przepusty/dławiki kablowe
+  standard: EN 62444
+  priority: 3
+- id: conduits
+  name_pl: Peszle/rury osłonowe
+  standard: EN/IEC 61386
+  priority: 4
+- id: trays
+  name_pl: Koryta/listwy/kanały
+  standard: EN 50085 / EN 61537
+  priority: 5
+cross_cutting_topics:
+- REACH (SVHC, Annex XVII, PFAS, ftalany, BPA, halogeny)
+- RoHS (2011/65/EU) + EN/IEC 63000 (dokumentacja)
+- CPR (305/2011) + EN 13501-1; powiązania z EN 50575
+- ESPR/Ecodesign (non-energy) – trwałość, naprawialność, paszport
+- PPWR (opakowania)
+- CSRD/ESRS; CSDDD
+- CBAM (stal, aluminium)
+- CLP – klasy zagrożeń i etykietowanie
+- CE/hEN – listy norm zharmonizowanych i wytyczne
+product_to_topics:
+  ties:
+  - REACH
+  - RoHS
+  - EN 62275
+  - IP/IK
+  - CPR
+  boxes:
+  - REACH
+  - RoHS
+  - EN 60670
+  - IP/IK
+  - CPR
+  glands:
+  - REACH
+  - RoHS
+  - EN 62444
+  - IP/IK
+  - CBAM
+  conduits:
+  - REACH
+  - RoHS
+  - EN/IEC 61386
+  - CPR
+  trays:
+  - REACH
+  - RoHS
+  - EN 50085
+  - EN 61537
+  - CPR
+  - CBAM
+  - EN ISO 1461
+weights:
+  acts_eu: 1.0
+  agencies: 0.85
+  standards: 0.8
+  trends: 0.75
+  trade: 0.7
+  tenders: 0.65
+  marketplaces: 0.55
+  media: 0.45
+  forums: 0.3
+dedupe:
+  window_days: 14
+  cooldown_days: 28
+  status_override: true
+outputs:
+  raw_store: Google Sheets
+  newsletter_html: true
+  archive_pdf_local: true
+  newsletter_language: pl
+sources_summary:
+  EU:
+  - EUR-Lex
+  - OJ L/C
+  - Have Your Say
+  - Comitology
+  - OEIL
+  - Council Register
+  - ECHA
+  - CENELEC/CEN
+  - IEC/ISO
+  - RAPEX
+  - Access2Markets/TARIC
+  PL:
+  - RCL
+  - ISAP/Dz.U.
+  - Gov.pl
+  - UOKiK
+  - PKN
+  - GUNB/ITB
+  - e-Zamówienia
+  - GIOŚ/IOŚ-PIB
+  DE:
+  - Bundesanzeiger
+  - BMWK/BMUV
+  - UBA
+  - BfR
+  - DIN/DKE
+  - eVergabe/bund.de
+  CZ:
+  - Sbírka zákonů
+  - MPO/MŽP
+  - ČOI
+  - ÚNMZ
+  - VVZ
+  SK:
+  - Slov-Lex/Zbierka zákonov
+  - MŽP SR/MH SR
+  - ÚNMS SR
+  - ÚVO
+  LT:
+  - Seimas/e-TAR
+  - Aplinkos ministerija
+  - LST
+  - CVPP
